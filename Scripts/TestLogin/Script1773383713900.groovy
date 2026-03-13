@@ -19,9 +19,17 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://trytestingthis.netify.app/')
+WebUI.navigateToUrl('https://practicetestautomation.com/practice-test-login/')
 
-WebUI.verifyElementText(findTestObject('Page_404 - Page Not Found/h1_404 - Page Not Found'), '404 - Page Not Found')
+WebUI.setText(findTestObject('Page_Test Login  Practice Test Automation/input_Username'), 'student')
+
+WebUI.click(findTestObject('Page_Test Login  Practice Test Automation/input_Password'))
+
+WebUI.setEncryptedText(findTestObject('Page_Test Login  Practice Test Automation/input_Password'), 'p4y+y39Ir5PJb2ispxT0Ew==')
+
+WebUI.click(findTestObject('Page_Test Login  Practice Test Automation/button_submit'))
+
+WebUI.click(findTestObject('Page_Logged In Successfully  Practice Test _c87e4f/a_Log out'))
 
 WebUI.closeBrowser()
 
