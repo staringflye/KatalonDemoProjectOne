@@ -21,9 +21,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://trytestingthis.netify.app/')
 
-WebUI.click(findTestObject('Page_404 - Page Not Found/h1_404 - Page Not Found'))
-
-WebUI.rightClick(findTestObject('Page_404 - Page Not Found/h1_404 - Page Not Found'))
-
 WebUI.verifyElementText(findTestObject('Page_404 - Page Not Found/h1_404 - Page Not Found'), '404 - Page Not Found')
+
+WebUI.closeBrowser()
 
